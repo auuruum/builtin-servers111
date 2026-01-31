@@ -30,5 +30,6 @@ pluginManagement {
 include("common")
 include("fabric")
 include("forge")
+include("neoforge")
 
 rootProject.name = "builtin-servers"
