@@ -14,6 +14,12 @@ A small mod that lets modpack makers set up built-in servers instead of shipping
 logoFile = "icon.png"
 displayURL = "https://github.com/lucaargolo/builtin-servers"
 
+[[mixins]]
+config = "builtinservers.mixins.json"
+
+[[mixins]]
+config = "builtinservers-common.mixins.json"
+
 [[dependencies.builtinservers]]
 modId = "neoforge"
 type = "required"
@@ -24,6 +30,6 @@ side = "BOTH"
 [[dependencies.builtinservers]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,1.22)"
+versionRange = "[1.21.1,1.22)"
 ordering = "NONE"
 side = "BOTH"

@@ -54,7 +54,12 @@ allprojects {
         group = rootProject["maven_group"]
     }
 
-    repositories {}
+    repositories {
+        maven {
+            name = "NeoForge"
+            url = uri("https://maven.neoforged.net/releases/")
+        }
+    }
 
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
@@ -204,5 +209,4 @@ subprojects {
         }
     }
 }
-
 
